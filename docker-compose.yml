@@ -1,0 +1,11 @@
+services:
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+
+    volumes:
+      - ./api:/apiroot
+
+    ports:
+      - 8080
